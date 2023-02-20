@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="#BFF8E3">
+
+    <ImageView
+        android:id="@+id/game_IMG_clock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/clock"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/game_TXT_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/game_IMG_clock"
+        android:text="00:00"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/kufam_bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/heart"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/game_TXT_lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:fontFamily="@font/kufam_bold"
+        android:textSize="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/game_IMG_trophy"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/trophy"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/game_TXT_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/game_IMG_trophy"
+        android:text="0"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/kufam_bold"
+        android:textSize="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/game_IMG_calculator"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/girl"
+        android:layout_marginTop="120dp"
+        android:layout_toLeftOf="@id/game_IMG_calculator"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/boy"
+        android:layout_marginTop="120dp"
+        android:layout_toRightOf="@id/game_IMG_calculator"/>
+
+    <TextView
+        android:id="@+id/game_TXT_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 X 4 = "
+        android:layout_below="@id/game_IMG_calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+
+    <Button
+        android:id="@+id/game_BTN_one"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="45dp"
+        android:layout_gravity="center"
+        android:text="1"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@drawable/main_button"/>
+
+    <Button
+        android:id="@+id/game_BTN_two"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@id/game_BTN_one"
+        android:text="2"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@drawable/main_button"/>
+
+
+
+    <Button
+        android:id="@+id/game_BTN_three"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/game_BTN_one"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/kufam_bold"
+        android:text="3"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/game_BTN_four"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/game_BTN_two"
+        android:layout_toEndOf="@id/game_BTN_one"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/kufam_bold"
+        android:text="4"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

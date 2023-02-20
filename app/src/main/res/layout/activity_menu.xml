@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="#BFF8E3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:src="@drawable/logout" />
+
+    <TextView
+        android:id="@+id/manu_TXT_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kufam_bold"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="Hello!"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/manu_IMG_school"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/school" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+
+        <ImageButton
+            android:id="@+id/manu_BTN_play"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/calculator_btn"/>
+
+        <ImageButton
+            android:id="@+id/manu_BTN_practice"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/mortarboard_btn" />
+
+        <ImageButton
+            android:id="@+id/manu_BTN_records"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/trophygame_btn"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

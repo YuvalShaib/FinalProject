@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameoverActivity"
+    android:background="#BFF8E3">
+
+
+    <TextView
+        android:id="@+id/gameover_TXT_gameovermassage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Game Over!"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/gameover_TXT_scoremassage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your score: "
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_below="@id/gameover_TXT_gameovermassage"/>
+
+    <TextView
+        android:id="@+id/gameover_ETX_score"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_toEndOf="@id/gameover_TXT_scoremassage"
+        android:layout_below="@id/gameover_TXT_gameovermassage"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/girl"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/gameover_TXT_scoremassage"
+        android:layout_marginStart="210dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/gameover_TXT_scoremassage"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="110dp"
+        android:background="@drawable/boy" />
+
+    <Button
+        android:id="@+id/gameover_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/gameover_ETX_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Back to menu"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity"
+    android:background="#BFF8E3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sign_TXT_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kufam_bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign-in"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/sign_IMG_school"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sign_TXT_signin"
+        android:src="@drawable/school" />
+
+
+
+    <TextView
+        android:id="@+id/sign_TXT_user"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_IMG_school"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kufam_bold"
+        android:text="UserName:"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/sign_ETX_username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/sign_TXT_user"
+        android:layout_below="@id/sign_IMG_school"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/sign_TXT_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_TXT_user"
+        android:layout_marginStart="10dp"
+        android:text="Email:"
+        android:fontFamily="@font/kufam_bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/sign_ETX_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/sign_TXT_user"
+        android:layout_below="@id/sign_ETX_username"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/sign_TXT_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_below="@id/sign_TXT_pass"
+        android:fontFamily="@font/kufam_bold"
+        android:textSize="25dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/sign_ETX_confirmPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/sign_TXT_confirm"
+        android:layout_below="@id/sign_TXT_pass"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/signin_BTN_signin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_IMG_school"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Sign-in"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@drawable/main_button"/>
+
+
+    <!-- ProgressBar for loading time -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

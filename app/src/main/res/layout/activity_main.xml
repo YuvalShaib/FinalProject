@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BFF8E3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_TXT_welcome"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/kufam_bold"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+
+    <ImageView
+        android:id="@+id/main_IMG_school"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_TXT_welcome"
+        android:src="@drawable/school" />
+
+    <TextView
+        android:id="@+id/main_TXT_user"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_IMG_school"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kufam_bold"
+        android:text="UserName:"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/main_ETX_username"
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/main_TXT_user"
+        android:layout_below="@id/main_IMG_school"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/main_TXT_pass"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_TXT_user"
+        android:layout_marginStart="10dp"
+        android:text="Password:"
+        android:visibility="gone"
+        android:fontFamily="@font/kufam_bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/main_ETX_password"
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/main_TXT_user"
+        android:layout_below="@id/main_ETX_username"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/main_BTN_login"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_IMG_school"
+        android:layout_marginTop="120dp"
+        android:text="Log-in"
+        android:visibility="gone"
+        android:fontFamily="@font/kufam_bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@drawable/main_button"/>
+
+
+    <Button
+        android:id="@+id/main_BTN_signin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_BTN_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/kufam_bold"
+        android:text="Sign-in"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        android:layout_below="@+id/main_IMG_school"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/Signin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:src="@drawable/google_button"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sign in with Google"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ProgressBar for loading time -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
